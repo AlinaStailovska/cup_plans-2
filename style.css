@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+* {
+	font-family: "Lato", sans-serif;
+}
+ 
+html,
+body {
+	height: 100%;
+}
+
+.flex-container {
+	background-color: #fdde7e;
+	width: 1200px;
+	height: 600px;
+	display: inline-flex; 	
+	align-items: center;
+	justify-content: space-around;
+	margin: 30px 80px;
+	/*margin: auto;*/
+}
+
+.flex-item-bronze,
+.flex-item-silver,
+.flex-item-gold {
+	width: 360px;
+	height: 445px;
+	padding: 40px 100px 30px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 2px #ceb567;
+}
+
+.flex-item-gold {
+	width: 360px;
+	height: 500px;	
+}
+
+.flex-item-bronze-price,
+.flex-item-gold-price,
+.flex-item-silver-price {
+	font-weight: bold;
+	font-size: 60px;
+	color: #02995b;
+	text-align: center;
+}
+
+.flex-item-img,
+.flex-item-img,
+.flex-item-img {
+	font-size: 0;
+	width: 140px;
+	height: 140px;
+	background-repeat:no-repeat;
+	background-size: contain;
+	/*background-position: center;*/ 
+	margin: 10px auto;
+}
+
+.flex-item-bronze-img {
+	background-image: url(img/cup-bronze.png);
+}
+
+.flex-item-gold-img {
+	background-image: url(img/cup-gold.png);
+	margin: 40px auto;
+}
+
+.flex-item-silver-img {
+	background-image: url(img/cup-silver.png);
+}
+
+.flex-item-bronze-text,
+.flex-item-silver-text,
+.flex-item-gold-text  {
+	text-align: center;
+}
+
+.flex-item-bronze-text h1,
+.flex-item-silver-text h1,
+.flex-item-gold-text h1{
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.flex-item-bronze-text span,
+.flex-item-silver-text span,
+.flex-item-gold-text span {
+	font-size: 20px;
+	font-weight: 300;
+	opacity: 0.5;
+}
