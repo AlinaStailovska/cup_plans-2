@@ -9,20 +9,18 @@ body {
 	height: 100%;
 }
 
-.flex-container {
+.flex {
+	display: flex;
+	flex-direction: row;
 	background-color: #fdde7e;
 	width: 1200px;
 	height: 600px;
-	display: inline-flex; 	
 	align-items: center;
 	justify-content: space-around;
-	margin: 30px 80px;
-	/*margin: auto;*/
+	margin: auto;
 }
 
-.flex-item-bronze,
-.flex-item-silver,
-.flex-item-gold {
+.flex__item {
 	width: 360px;
 	height: 445px;
 	padding: 40px 100px 30px;
@@ -31,61 +29,55 @@ body {
 	box-shadow: 0 2px #ceb567;
 }
 
-.flex-item-gold {
+.flex__item--gold {
 	width: 360px;
 	height: 500px;	
 }
 
-.flex-item-bronze-price,
-.flex-item-gold-price,
-.flex-item-silver-price {
+.flex__item-price {
 	font-weight: bold;
 	font-size: 60px;
 	color: #02995b;
 	text-align: center;
+	max-width: 140px;
+	overflow: hidden;
 }
 
-.flex-item-img,
-.flex-item-img,
-.flex-item-img {
+.flex__item-img {
 	font-size: 0;
 	width: 140px;
 	height: 140px;
 	background-repeat:no-repeat;
 	background-size: contain;
-	/*background-position: center;*/ 
 	margin: 10px auto;
 }
 
-.flex-item-bronze-img {
+.flex__item-img--br {
 	background-image: url(img/cup-bronze.png);
 }
 
-.flex-item-gold-img {
+.flex__item-img--gl {
 	background-image: url(img/cup-gold.png);
 	margin: 40px auto;
 }
 
-.flex-item-silver-img {
+.flex__item-img--sl {
 	background-image: url(img/cup-silver.png);
 }
 
-.flex-item-bronze-text,
-.flex-item-silver-text,
-.flex-item-gold-text  {
+.flex__item-text  {
 	text-align: center;
+	max-width: 140px;
+	max-height: 150px;
+	overflow: hidden;
 }
 
-.flex-item-bronze-text h1,
-.flex-item-silver-text h1,
-.flex-item-gold-text h1{
+.flex__item-text h1{
 	font-size: 40px;
 	font-weight: 400;
 }
 
-.flex-item-bronze-text span,
-.flex-item-silver-text span,
-.flex-item-gold-text span {
+.flex__item-text span {
 	font-size: 20px;
 	font-weight: 300;
 	opacity: 0.5;
